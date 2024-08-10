@@ -12,7 +12,6 @@ Welcome to my personal website repository. This website showcases my work as a F
 - [Usage](#usage)
 - [Pages](#pages)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Overview
