@@ -79,11 +79,6 @@ Contributions are welcome! If you have suggestions or want to enhance the projec
 
 ## Connect with Me
 
-I love connecting with new people and exploring new opportunities. Feel free to reach out to me through any of the
-platforms below:
-
-## Connect with Me
-
 I love connecting with new people and exploring new opportunities. Feel free to reach out to me through any of the platforms below:
 
 <table>
