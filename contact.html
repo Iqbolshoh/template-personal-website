@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo" onclick="window.location.href='./'"><span>Iqbol</span>shoh</h2>
+        <nav class="navigation">
+            <a href="./">Home</a>
+            <a href="about.php">About</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="contact.php">Contact</a>
+        </nav>
+        <a href="portfolio.php" class="btn-talk">My Projects</a>
+    </header>
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch with me, feel free to contact me using the
+            information below or by filling out the contact form:</p>
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="button" id="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <a href="mailto:IIlhomjonov777@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <p><a href="mailto:IIlhomjonov777@gmail.com"><span>Email: <br></span>IIlhomjonov777@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-item">
+                <a href="tel:+998997799333"><i class="fa-solid fa-phone"></i></a>
+                <p><a href="tel:+998997799333"><span>Phone: <br></span> +998997799333</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("9L46buWTC-cJ8aFDq");
+        })();
+    </script>
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event) {
+            event.preventDefault();
+            let message = document.getElementById('message').value,
+                email = document.getElementById('email').value,
+                name = document.getElementById('name').value;
+
+            console.log(name, email, message);
+
+            emailjs.send("service_jipg89f", "template_uufhaje", {
+                to_name: "Iqbolshoh",
+                message: message,
+                email_id: email,
+                from_name: name,
+            }).then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+        });
+    </script>
+</body>
+
+</html>

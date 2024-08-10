@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>
+        function goToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo" onclick="window.location.href='./'"><span>Iqbol</span>shoh</h2>
+        <nav class="navigation">
+            <a href="./">Home</a>
+            <a href="about.php">About</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="contact.php">Contact</a>
+        </nav>
+        <a href="portfolio.php" class="btn-talk">My Projects</a>
+    </header>
+
+    <div class="link-container">
+        <div class="abox" onclick="goToPage('./projects/form/')">
+            <a class="alink">Form</a>
+        </div>
+        <div class="abox" onclick="goToPage('./projects/shifr/')">
+            <a class="alink">Shifrlash</a>
+        </div>
+        <div class="abox" onclick="goToPage(`https://ozod-travel.netlify.app/`)">
+            <a class="alink">Travel Guide</a>
+        </div>
+        <div class="abox" onclick="goToPage('./projects/xo/')">
+            <a class="alink">X O Game</a>
+        </div>
+        <div class="abox" onclick="goToPage('./projects/canculator/')">
+            <a class="alink">Calculator</a>
+        </div>
+        <div class="abox" onclick="goToPage('./projects/clock/')">
+            <a class="alink">Clock</a>
+        </div>
+        <div class="abox" onclick="goToPage('./projects/timer/')">
+            <a class="alink">Timer</a>
+        </div>
+        <div class="abox" onclick="goToPage('../market/')">
+            <a class="alink">Market</a>
+        </div>
+        <div class="abox" onclick="goToPage('http://templates.uz/')">
+            <a class="alink">Templates</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
