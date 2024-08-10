@@ -16,9 +16,9 @@ Welcome to my personal website repository. This website showcases my work as a F
 
 ## Overview
 
-This is the source code for my personal website, which includes sections such as "Home", "About", "Portfolio", and "Contact". It’s designed to be a simple and clean representation of my skills, projects, and how to reach me.
+This is the source code for my personal website, which includes sections such as "About", "Portfolio", and "Contact". It’s designed to be a simple and clean representation of my skills, projects, and how to reach me.
 
-### Desktop View 
+### Desktop View
 ![Page about](./images/desktop-1(about).png)
 ![Page portfolio](./images/desktop-2(portfolio).png)
 ![Page contact](./images/desktop-3(contact).png)
