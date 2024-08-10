@@ -96,6 +96,12 @@ I love connecting with new people and exploring new opportunities. Feel free to 
             </a>
         </td>
         <td>
+            <a href="https://www.linkedin.com/in/iiqbolshoh/">
+                <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/linkedin.svg"
+                    height="48" width="48" alt="LinkedIn" />
+            </a>
+        </td>
+        <td>
             <a href="https://instagram.com/iqbolshoh_777" target="blank"><img align="center"
                     src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
                     alt="instagram" height="48" width="48" /></a>
@@ -110,12 +116,6 @@ I love connecting with new people and exploring new opportunities. Feel free to 
             <a href="https://x.com/iqbolshoh_777">
                 <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" height="48"
                     width="48" alt="Twitter" />
-            </a>
-        </td>
-        <td>
-            <a href="https://www.linkedin.com/in/iqbolshoh/">
-                <img src="https://github.com/gayanvoice/github-active-users-monitor/blob/master/public/images/icons/linkedin.svg"
-                    height="48" width="48" alt="LinkedIn" />
             </a>
         </td>
         <td>
