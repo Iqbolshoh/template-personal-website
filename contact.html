@@ -15,11 +15,11 @@
         <h2 class="logo" onclick="window.location.href='./'"><span>Iqbol</span>shoh</h2>
         <nav class="navigation">
             <a href="./">Home</a>
-            <a href="about.php">About</a>
-            <a href="portfolio.php">Portfolio</a>
-            <a href="contact.php">Contact</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </nav>
-        <a href="portfolio.php" class="btn-talk">My Projects</a>
+        <a href="portfolio.html" class="btn-talk">My Projects</a>
     </header>
     <div class="contact">
         <h2>Contact Me</h2>
@@ -49,12 +49,12 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init("9L46buWTC-cJ8aFDq");
+        (function () {
+            emailjs.init("9L46WTC-cbuJJaFDq");
         })();
     </script>
     <script>
-        document.getElementById('submit').addEventListener('click', function(event) {
+        document.getElementById('submit').addEventListener('click', function (event) {
             event.preventDefault();
             let message = document.getElementById('message').value,
                 email = document.getElementById('email').value,
@@ -62,14 +62,14 @@
 
             console.log(name, email, message);
 
-            emailjs.send("service_jipg89f", "template_uufhaje", {
+            emailjs.send("service_jipsdt", "template_uufhdfe", {
                 to_name: "Iqbolshoh",
                 message: message,
                 email_id: email,
                 from_name: name,
-            }).then(function(response) {
+            }).then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
-            }, function(error) {
+            }, function (error) {
                 console.log('FAILED...', error);
             });
         });
