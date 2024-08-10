@@ -21,17 +21,21 @@ This is the source code for my personal website, which includes sections such as
 ### Desktop View
 
 <p align="center">
-    <img src="./images/desktop-1(about).png" alt="Page about" width="50%">
-    <img src="./images/desktop-2(portfolio).png" alt="Page portfolio" width="50%">
-    <img src="./images/desktop-3(contact).png" alt="Page contact" width="50%">
+    <img src="./images/desktop-1(about).png" alt="Page about" width="50%" style="display: inline-block;">
+    <img src="./images/desktop-2(portfolio).png" alt="Page portfolio" width="50%" style="display: inline-block;">
+</p>
+<p align="center">
+    <img src="./images/desktop-3(contact).png" alt="Page contact" width="50%" style="display: inline-block;">
 </p>
 
 ### Mobile View
 
 <p align="center">
-    <img src="./images/mobile-1(about).png" alt="Page about" width="50%">
-    <img src="./images/mobile-2(portfolio).png" alt="Page portfolio" width="50%">
-    <img src="./images/mobile-3(contact).png" alt="Page contact" width="50%">
+    <img src="./images/mobile-1(about).png" alt="Page about" width="50%" style="display: inline-block;">
+    <img src="./images/mobile-2(portfolio).png" alt="Page portfolio" width="50%" style="display: inline-block;">
+</p>
+<p align="center">
+    <img src="./images/mobile-3(contact).png" alt="Page contact" width="50%" style="display: inline-block;">
 </p>
 
 ## Technologies Used
