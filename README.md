@@ -21,24 +21,25 @@ This is the source code for my personal website, which includes sections such as
 ### Desktop View
 
 <p align="center">
-    <img src="./images/desktop(index).png" alt="Page about" width="50%" style="display: inline-block;">
-    <img src="./images/desktop(about).png" alt="Page about" width="50%" style="display: inline-block;">
+    <img src="./images/desktop(index).png" alt="Page index" width="49%" style="display: inline-block;">
+    <img src="./images/desktop(about).png" alt="Page about" width="49%" style="display: inline-block;">
 </p>
 <p align="center">
-    <img src="./images/desktop(portfolio).png" alt="Page portfolio" width="50%" style="display: inline-block;">
-    <img src="./images/desktop(contact).png" alt="Page contact" width="50%" style="display: inline-block;">
+    <img src="./images/desktop(portfolio).png" alt="Page portfolio" width="49%" style="display: inline-block;">
+    <img src="./images/desktop(contact).png" alt="Page contact" width="49%" style="display: inline-block;">
 </p>
 
 ### Mobile View
 
 <p align="center">
-    <img src="./images/mobile(index).png" alt="Page about" width="50%" style="display: inline-block;">
-    <img src="./images/mobile(about).png" alt="Page about" width="50%" style="display: inline-block;">
+    <img src="./images/mobile(index).png" alt="Page index" width="49%" style="display: inline-block;">
+    <img src="./images/mobile(about).png" alt="Page about" width="49%" style="display: inline-block;">
 </p>
 <p align="center">
-    <img src="./images/mobile(portfolio).png" alt="Page portfolio" width="50%" style="display: inline-block;">
-    <img src="./images/mobile(contact).png" alt="Page contact" width="50%" style="display: inline-block;">
+    <img src="./images/mobile(portfolio).png" alt="Page portfolio" width="49%" style="display: inline-block;">
+    <img src="./images/mobile(contact).png" alt="Page contact" width="49%" style="display: inline-block;">
 </p>
+
 
 ## Technologies Used
 
