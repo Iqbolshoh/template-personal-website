@@ -1,0 +1,166 @@
+.link-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-column-gap: 10px;
+    margin: 90px;
+}
+
+.abox {
+    width: 270px;
+    height: 270px;
+    margin-top: 45px;
+    background-color: #7d2ae8;
+    transition: transform 0.3s;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.abox:hover {
+    transform: scale(1.05);
+}
+
+.alink {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+@media (max-width: 1024px) {
+
+    .link-container {
+        margin: 120px 28px;
+        grid-column-gap: 10px;
+    }
+
+    .abox {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+    }
+
+    .alink {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 768px) {
+    .link-container {
+        margin: 120px 8px;
+    }
+
+    .abox {
+        width: 170px;
+        height: 170px;
+    }
+
+    .alink {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 740px) {
+
+    .alink {
+        font-size: 21px;
+    }
+
+    .abox {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 670px) {
+    .alink {
+        font-size: 19px;
+    }
+
+    .abox {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .link-container {
+        margin: 77px 8px;
+        grid-column-gap: 5px;
+    }
+
+    .abox {
+        width: 90px;
+        height: 90px;
+        margin-top: 17px;
+        border-radius: 11px;
+    }
+
+    .alink {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430px) {
+    .abox {
+        width: 82px;
+        height: 82px;
+    }
+
+    .alink {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .link-container {
+        margin: 75px 8px;
+        grid-column-gap: 5px;
+    }
+
+    .abox {
+        width: 75px;
+        height: 75px;
+        margin-top: 14px;
+        border-radius: 9px;
+    }
+
+    .alink {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .alink {
+        font-size: 10.5px;
+    }
+
+    .abox {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 347px) {
+
+    .abox {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .abox {
+        width: 65px;
+        height: 65px;
+    }
+}
