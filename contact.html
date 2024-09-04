@@ -12,43 +12,43 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="logo" onclick="window.location.href='./'"><span>Iqbol</span>shoh</h2>
-        <nav class="navigation">
+    <header class="header-container">
+        <h2 class="logo-text" onclick="window.location.href='./'"><span class="logo-highlight">Iqbol</span>shoh</h2>
+        <nav class="nav-links">
             <a href="./">Home</a>
             <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <a href="portfolio.html" class="btn-talk">My Projects</a>
-    </header>
+        <a href="portfolio.html" class="button-projects">My Projects</a>
+    </header>    
+
     <div class="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or would like to get in touch with me, feel free to contact me using the
+        <h2 class="contact__title">Contact Me</h2>
+        <p class="contact__description">If you have any questions or would like to get in touch with me, feel free to
+            contact me using the
             information below or by filling out the contact form:</p>
-        <div class="contact-form-container">
-            <form class="contact-form">
+        <div class="contact__form-wrapper">
+            <form class="contact__form">
                 <input type="text" name="name" id="name" placeholder="Your Name" required>
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
                 <textarea name="message" id="message" placeholder="Your Message" required></textarea>
                 <button type="button" id="submit">Send Message</button>
             </form>
         </div>
-        <div class="contact-info">
-            <div class="contact-item">
+        <div class="contact__info">
+            <div class="contact__info-item">
                 <a href="mailto:IIlhomjonov777@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <p><a href="mailto:IIlhomjonov777@gmail.com"><span>Email: <br></span>IIlhomjonov777@gmail.com</a>
-                </p>
+                <p><a href="mailto:IIlhomjonov777@gmail.com"><span>Email: <br></span>IIlhomjonov777@gmail.com</a></p>
             </div>
-            <div class="contact-item">
+            <div class="contact__info-item">
                 <a href="tel:+998997799333"><i class="fa-solid fa-phone"></i></a>
                 <p><a href="tel:+998997799333"><span>Phone: <br></span> +998997799333</a></p>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="./script.js"></script>
 </body>
