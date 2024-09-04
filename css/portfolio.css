@@ -15,7 +15,7 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
-    gap: 70px;
+    gap: 70px 140px;
     padding: 20px;
     box-sizing: border-box;
 }
