@@ -9,10 +9,121 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="icon" href="./favicon.ico">
+
     <script>
-        function goToPage(url) {
-            window.location.href = url;
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const portfolioItems = [
+                {
+                    name: "Encryption",
+                    url: "https://projects.iqbolshoh.uz/encryption/",
+                    img: "images/encryption.png",
+                    github: "https://github.com/Iqbolshoh/javascript-text-encryption"
+                },
+                {
+                    name: "Slider",
+                    url: "https://projects.iqbolshoh.uz/slider/",
+                    img: "images/slider.png",
+                    github: "https://github.com/Iqbolshoh/template-javascript-slider"
+                },
+                {
+                    name: "Travel site",
+                    url: "https://travel-samarkand.netlify.app/",
+                    img: "images/travel_site.png",
+                    github: "https://github.com/Iqbolshoh/website-samarkand-travel"
+                },
+                {
+                    name: "Timer",
+                    url: "https://projects.iqbolshoh.uz/timer/",
+                    img: "images/timer.png",
+                    github: "https://github.com/Iqbolshoh/javascript-timer"
+                },
+                {
+                    name: "Clock",
+                    url: "https://projects.iqbolshoh.uz/clock/",
+                    img: "images/clock.png",
+                    github: "https://github.com/Iqbolshoh/javascript-clock"
+                },
+                {
+                    name: "XO Game",
+                    url: "https://projects.iqbolshoh.uz/xo/",
+                    img: "images/xo_game.png",
+                    github: "https://github.com/Iqbolshoh/javascript-xo-game"
+                },
+                {
+                    name: "Calculator",
+                    url: "https://projects.iqbolshoh.uz/calculator/",
+                    img: "images/calculator.png",
+                    github: "https://github.com/Iqbolshoh/javascript-calculator"
+                },
+                {
+                    name: "Form",
+                    url: "https://projects.iqbolshoh.uz/form/",
+                    img: "images/form.png",
+                    github: "https://github.com/Iqbolshoh/template-html-css-form"
+                },
+                {
+                    name: "Templates.uz",
+                    url: "https://projects.iqbolshoh.uz/https://templates.uz/",
+                    img: "images/templates.png",
+                    github: "https://github.com/Iqbolshoh/templates.uz"
+                },
+                {
+                    name: "Market",
+                    url: "https://projects.iqbolshoh.uz/market/",
+                    img: "images/market.png",
+                    github: "https://github.com/Iqbolshoh/php-mysql-marketplace"
+                },
+                {
+                    name: "English",
+                    url: "https://projects.iqbolshoh.uz/english/",
+                    img: "images/english.png",
+                    github: "https://github.com/Iqbolshoh/website-english-platform"
+                }
+            ]
+
+            const portfolioGrid = document.querySelector(".portfolio-grid")
+
+            portfolioItems.forEach(item => {
+                const portfolioItem = document.createElement("div")
+                portfolioItem.classList.add("portfolio-item")
+
+                const portfolioLink = document.createElement("a")
+                portfolioLink.href = item.url
+                portfolioLink.classList.add("portfolio-link")
+
+                const imgElement = document.createElement("img")
+                imgElement.src = item.img
+                portfolioLink.appendChild(imgElement)
+
+                const nameElement = document.createElement("div")
+                nameElement.classList.add("item-name")
+                nameElement.textContent = item.name
+                portfolioLink.appendChild(nameElement)
+
+                portfolioItem.appendChild(portfolioLink)
+
+                const portfolioIcons = document.createElement("div")
+                portfolioIcons.classList.add("portfolio-icons")
+
+                if (item.github) {
+                    const githubIcon = document.createElement("a")
+                    githubIcon.href = item.github
+                    githubIcon.target = "_blank"
+                    githubIcon.innerHTML = '<i class="fab fa-github"></i>'
+                    portfolioIcons.appendChild(githubIcon)
+
+                    const downloadIcon = document.createElement("a")
+                    downloadIcon.href = `${item.github}/archive/refs/heads/main.zip`
+                    downloadIcon.target = "_blank"
+                    downloadIcon.innerHTML = '<i class="fas fa-download"></i>'
+                    portfolioIcons.appendChild(downloadIcon)
+                }
+
+                portfolioItem.appendChild(portfolioIcons)
+
+                portfolioGrid.appendChild(portfolioItem)
+            })
+        })
     </script>
 </head>
 
@@ -29,35 +140,7 @@
     </header>
 
     <div class="container">
-        <div class="portfolio-grid">
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/form/')">
-                <a class="portfolio-link">Form</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://iqbolshoh.uz/market/')">
-                <a class="portfolio-link">Market</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/shifr/')">
-                <a class="portfolio-link">Shifrlash</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://ozod-travel.netlify.app/')">
-                <a class="portfolio-link">Travel Site</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/xo/')">
-                <a class="portfolio-link">XO Game</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/canculator/')">
-                <a class="portfolio-link">Calculator</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/clock/')">
-                <a class="portfolio-link">Clock</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('https://projects.iqbolshoh.uz/timer/')">
-                <a class="portfolio-link">Timer</a>
-            </div>
-            <div class="portfolio-item" onclick="goToPage('http://templates.uz/')">
-                <a class="portfolio-link">Templates</a>
-            </div>
-        </div>
+        <div class="portfolio-grid"></div>
     </div>
 </body>
 
