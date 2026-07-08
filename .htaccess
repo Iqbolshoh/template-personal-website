@@ -1,3 +1,6 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On ErrorDocument 403 /404.html ErrorDocument 404 /404.html
+  RewriteEngine On
 </IfModule>
+
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
